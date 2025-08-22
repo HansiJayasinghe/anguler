@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form desing</title>
+        </head>
+
+        <body>
+<div class="logo-container">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsKa1lIRFsb534eECpDr0TRup_9erXCmjPeQ&s" alt="SLPA Logo">
+</div>
+<div class="container">
+ 
+  <h4 class="lwe">Welcome to the Sri Lanka Ports Authority Your Gateway to Global Trade.</h4>
+  <form>
+    <div class="form-group">
+      <label class="em">Email</label>
+      <input [formControl]="usernameControl" type="text" class="input-field">
+    </div>
+    <div class="form-group">
+      <label class="ps">Password</label>
+      <input [formControl]="password" type="password" class="input-field" required>
+    </div>
+    <div class="fup">Forgot your password?</div>
+    <input type="button" class="btn" value="Login" (click)="login()">
+  </form>
+</div>
+
+</body>
