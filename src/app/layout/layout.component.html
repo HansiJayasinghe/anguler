@@ -10,6 +10,16 @@
         <h1 class="wd"> Welcome to Dashboard </h1>
         <h1>  </h1>
 
+        <div *ngIf="user; else noUser">
+  <h2>Welcome, {{ user.name }}</h2>
+  <p><strong>Email:</strong> {{ user.email }}</p>
+  <p><strong>Role:</strong> {{ user.role }}</p>
+</div>
+
+<ng-template #noUser>
+  <p>No user logged in. Please log in first.</p>
+</ng-template>
+
     </body>
     </html>
 

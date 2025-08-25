@@ -89,7 +89,7 @@ import { LoginDetails } from '../model/login';
 import { LoginService } from '../services/login.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorResponse } from '../model/error';
-import { SessionService } from '../services/SessionService';
+import { SessionService } from '../services/session.service';
 
 @Component({
   selector: 'app-login',
